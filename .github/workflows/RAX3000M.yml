@@ -33,7 +33,8 @@ env:
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
   CCACHE_DIR: /workdir/openwrt/.ccache
-  CCACHE_MAXSIZE: 2G
+  CCACHE_MAXSIZE: 4G
+  CCACHE_COMPRESS: 1
 
 jobs:
   build:
