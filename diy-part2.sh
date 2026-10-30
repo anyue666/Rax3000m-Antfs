@@ -12,3 +12,6 @@
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.66.2/g' package/base-files/files/bin/config_generate
+
+# Make uci-defaults scripts executable (files/ overlay is copied as-is)
+[ -d files/etc/uci-defaults ] && chmod +x files/etc/uci-defaults/*
